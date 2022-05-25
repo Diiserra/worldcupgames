@@ -1,0 +1,69 @@
+.container {
+    width: 100vw;
+    height: 6.8rem;
+    background-color: var(--qatar-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoWorldCup {
+    width: 2.0rem;
+    margin-top: 4px;
+}
+
+.menuNavContainer {
+    width: 50.2rem;
+}
+
+.menuNavContainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuNavContainer a:hover {
+    color: var(--menu-active);
+}
+
+.menuDesable {
+    color: var(--menu-desable);
+    font-size: 1.4rem;
+}
+
+.menuActive {
+    color: var(--menu-active);
+    font-size: 1.4rem;
+}
+
+.menuActive::after{
+    content: "✦";
+    font-size: 1.2rem;
+    color: var(--menu-active);
+    margin-left: 8px;
+}
+
+.menuActive::before{
+    content: "✦";
+    font-size: 1.2rem;
+    color: var(--menu-active);
+    margin-right: 8px;
+}
+
+.githubContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubContainer img {
+    margin-right: 4px;
+    width: 2.0rem;
+}
+
+.githubContainer span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white-ice);
+    font-size: 1.2rem;
+    font-weight: 500;
+} 
