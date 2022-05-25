@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../styles/HeaderBarComponent.module.css";
 
 export default function HeaderBarComponent() {
@@ -15,16 +16,16 @@ export default function HeaderBarComponent() {
       <nav className={styles.menuNavContainer}>
         <ul>
           <li>
-            <a className={styles.menuActive} href="/inicio">Inicio</a>
+            <Link className={styles.menuActive} to="/">Início</Link>
           </li>
           <li>
-            <a className={styles.menuDesable} href="/grupos">Grupos</a>
+            <Link className={styles.menuDesable} to="/grupos">Grupos</Link>
           </li>
           <li>
-            <a className={styles.menuDesable} href="/tabela">Tabela</a>
+            <Link className={styles.menuDesable} to="/tabela">Tabela</Link>
           </li>
           <li>
-            <a className={styles.menuDesable}href="noticias">Noticias</a>
+            <Link className={styles.menuDesable} to="noticias">Notícias</Link>
           </li>
         </ul>
       </nav>
