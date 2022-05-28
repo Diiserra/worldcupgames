@@ -8,11 +8,11 @@
 }
 
 :root {
-  --qatar-color: #791426;
+  --qatar-color: #a91b38;
   --white-ice: #f0efeb;
-  --gray-medium: #c9c9c9;
+  --gray-medium: #dadada;
   --menu-active: #f8f8f8;
-  --menu-desable: #4d0202;
+  --menu-desable: #838383;
 }
 
 * {
@@ -29,10 +29,6 @@ html {
 
 body {
   font-size: 1.6rem;
-}
-
-h1 {
-  background-color: var(--qatar-color);
 }
 
 a,
