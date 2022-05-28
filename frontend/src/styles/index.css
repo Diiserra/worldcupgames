@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
 @font-face {
   font-family: 'Qatar Bold';
   src: url('../fonts/Qatar2022Arabic-Bold.ttf') format('truetype');
@@ -9,8 +7,10 @@
 
 :root {
   --qatar-color: #a91b38;
+  --qatar-dark-color: #6d071c;
   --white-ice: #f0efeb;
   --gray-medium: #dadada;
+  --dark-gray: #666666;
   --menu-active: #f8f8f8;
   --menu-desable: #838383;
 }

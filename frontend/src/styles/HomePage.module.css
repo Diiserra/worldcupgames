@@ -16,11 +16,12 @@
 }
 
 .titleContainer {
-    width: 500px;
-    height: 100%;
+    width: 40%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .titleContainer h1 {

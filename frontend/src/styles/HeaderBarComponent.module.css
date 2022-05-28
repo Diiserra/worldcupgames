@@ -37,14 +37,14 @@
 }
 
 .menuActive::after{
-    content: "✦";
+    content: "◆";
     font-size: 1.2rem;
     color: var(--menu-active);
     margin-left: 8px;
 }
 
 .menuActive::before{
-    content: "✦";
+    content: "◆";
     font-size: 1.2rem;
     color: var(--menu-active);
     margin-right: 8px;

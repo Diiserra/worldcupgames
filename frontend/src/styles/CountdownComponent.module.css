@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 150px;
+    background: var(--white-ice);
+    margin-top: 42px;
+    border-radius: 0 50px 0 50px;
+}
+
+.titleCountdown {
+    color: var(--qatar-color);
+    font-size: 1.4rem;
+    margin: 12px;
+}
+
+.countdownContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-self: center;
+}
+
+.countdownContainer strong {
+    font-size: 2.8rem;
+    text-decoration: none;
+    align-self: center;
+    color: var(--qatar-color);
+    transform: translateY(-12px);
+}
+
+.countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown span:first-child {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--qatar-dark-color);
+}
+
+.countdown > span {
+    font-family: "Bebas Neue";
+    color: var(--dark-gray);
+}
