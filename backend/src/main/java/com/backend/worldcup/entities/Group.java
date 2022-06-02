@@ -1,29 +1,45 @@
 package com.backend.worldcup.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_group")
 public class Group implements Serializable{
 
     private static final long serialVersionUID = 1L;
     
-    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long groupId;
     private String name;
+
+    @OneToMany(mappedBy = "group")
+    private List<Team> teams = new ArrayList<>();
 
     public Group() {
 
     }
 
     public Group(Long id, String name) {
-        this.id = id;
+        this.groupId = id;
         this.name = name;
     }
 
-    public Long getId() {
-        return id;
+    public Long getGroupId() {
+        return groupId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setGroupId(Long id) {
+        this.groupId = id;
     }
 
     public String getName() {
@@ -38,7 +54,7 @@ public class Group implements Serializable{
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + ((groupId == null) ? 0 : groupId.hashCode());
         return result;
     }
 
@@ -51,10 +67,10 @@ public class Group implements Serializable{
         if (getClass() != obj.getClass())
             return false;
         Group other = (Group) obj;
-        if (id == null) {
-            if (other.id != null)
+        if (groupId == null) {
+            if (other.groupId != null)
                 return false;
-        } else if (!id.equals(other.id))
+        } else if (!groupId.equals(other.groupId))
             return false;
         return true;
     }
