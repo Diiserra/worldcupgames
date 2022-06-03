@@ -19,7 +19,7 @@ public class Team implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long teamId;
-    private String name;
+    private String teamName;
     private String country;
     private String initials;
 
@@ -32,7 +32,7 @@ public class Team implements Serializable{
 
     public Team(Long id, String name, String country, String initials, Group group) {
         this.teamId = id;
-        this.name = name;
+        this.teamName = name;
         this.country = country;
         this.initials = initials;
         this.group = group;
@@ -46,12 +46,12 @@ public class Team implements Serializable{
         this.teamId = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTeamName() {
+        return teamName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTeamName(String name) {
+        this.teamName = name;
     }
 
     public String getCountry() {

@@ -20,7 +20,8 @@ public class Group implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long groupId;
-    private String name;
+    private String groupName;
+    private String description;
 
     @OneToMany(mappedBy = "group")
     private List<Team> teams = new ArrayList<>();
@@ -29,25 +30,38 @@ public class Group implements Serializable{
 
     }
 
-    public Group(Long id, String name) {
-        this.groupId = id;
-        this.name = name;
+    public Group(Long groupId, String groupName, String description) {
+        this.groupId = groupId;
+        this.groupName = groupName;
+        this.description = description;
     }
 
     public Long getGroupId() {
         return groupId;
     }
 
-    public void setGroupId(Long id) {
-        this.groupId = id;
+    public void setGroupId(Long groupId) {
+        this.groupId = groupId;
     }
 
-    public String getName() {
-        return name;
+    public String getGroupName() {
+        return groupName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<Team> getTeams() {
+        return teams;
     }
 
     @Override
