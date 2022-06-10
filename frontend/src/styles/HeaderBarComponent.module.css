@@ -1,10 +1,20 @@
-.container {
+.homePageHeader {
     width: 100vw;
-    height: 7.8rem;
+    height: 6.8rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: absolute;
+}
+
+.normalHeader {
+    width: 100vw;
+    height: 6.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: var(--qatar-color);
 }
 
 .logoWorldCup {
@@ -19,7 +29,7 @@
 .menuNavContainer ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .menuNavContainer a:hover {
@@ -29,6 +39,7 @@
 .menuDesable {
     color: var(--menu-desable);
     font-size: 1.4rem;
+    opacity: 0.6;
 }
 
 .menuActive {
@@ -38,14 +49,14 @@
 
 .menuActive::after{
     content: "◆";
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--menu-active);
     margin-left: 8px;
 }
 
 .menuActive::before{
     content: "◆";
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--menu-active);
     margin-right: 8px;
 }
